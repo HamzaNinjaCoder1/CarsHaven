@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Model Viewer</title>
+  <style>
+    /* CSS Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0; /* Light gray background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .sketchfab-embed-wrapper {
+      width: 80%;
+      max-width: 900px;
+      aspect-ratio: 16 / 9; /* Maintain a 16:9 ratio */
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .sketchfab-embed-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="sketchfab-embed-wrapper">
+    <iframe
+      title="2013 Suzuki WagonR"
+      allowfullscreen
+      mozallowfullscreen="true"
+      webkitallowfullscreen="true"
+      allow="autoplay; fullscreen; xr-spatial-tracking"
+      src="https://sketchfab.com/models/71112627f42342099ff95b59e7532663/embed">
+    </iframe>
+  </div>
+</body>
+</html>

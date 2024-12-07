@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <title>Cars Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="loading-page">
+        <div id="preloader">
+            <img src="Circle2.webp" alt="Pre-loader GIF">
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <div class="progress-bar-text">Engine is activating</div>
+        <div class="count-display">0%</div>
+    </div>
+    <div class="welcome-page" >
+        <div id="top">
+            <h1 id="top-h">WELCOME TO CAR HAVEN</h1>
+        </div>
+        <div id="center">
+            <div id="contentContainer">
+                <div class="line1"></div>
+                <div class="steering-image"></div>
+                <div class="tilted-line"></div>
+                <div class="line2"></div>
+                <div class="tilted-line2"></div>
+                <div class="line3"></div>
+                <div class="tilted-line3"></div>
+                <div class="line4"></div>
+                <div class="tilted-line4"></div>
+                <div class="info1">Experience the Joy of Driving Your Dream Car Today!</div>
+                <div class="info2">Discover Quality Cars at Unbeatable Prices!</div>
+                <div class="info3">Your Next Adventure Starts with the Perfect Ride!</div>
+                <div class="info4">Shop Smart and Drive Happy—Your Journey Begins Here!</div>
+                <div class="second-cotainer"> 
+            <pre style="font-size: 22px; font-weight: 500; position: relative; transform: translateX(520px); top: 30px; font-family: Michroma, sans-serif;">
+                <strong style="font-size: 24px; font-weight: 700;">100+                                    24 Hrs</strong>
+                Employees                            Services
+            </pre>
+            <div class="vertical-line" style="height: 150px; width: 3px; margin-left: 7px; position: relative; margin-top: -90px;"></div>
+        </div> 
+        </div>  
+        <div class="video-container">
+            <video id="backgroundVideo" autoplay muted loop></video>
+            <div class="overlay">
+                <div class="box" data-video="vehiclee.mp4" onmouseover="playRelatedVideo(this)">Vehicles</div>
+                <div class="box" data-video="charging (1).mp4" onmouseover="playRelatedVideo(this)">Charging</div>
+                <div class="box" data-video="energy.mp4" onmouseover="playRelatedVideo(this)">Energy</div>
+            </div>
+        </div>   
+        <div class="categories" style="text-align: center; margin-top: 30px;">
+            Popular categories
+            <div class="parts">
+                <div class="p"><p>Electric</p></div><div class="p"><p>Truck</p></div>
+                <div class="p"><p>SUV</p></div><div class="p"><p>Luxry</p></div>
+                <div class="p"><p>Sedan</p></div><div class="p"><p>Hybrid</p></div>
+                <div class="p"><p>Disel</p></div><div class="p"><p>Coupe</p></div>
+                <div class="p"><p>Weagon</p></div><div class="p"><p>Van</p></div>
+            </div>
+        </div> 
+          <div class="car-container" id="car-container">
+            <!-- Cars will be added here dynamically -->
+          </div>
+        </div>
+        <div id="bottom">
+            <h1 id="bottom-h">WELCOME TO CAR HAVEN</h1>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
